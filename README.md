@@ -1,3 +1,17 @@
+## Card number input component
+
+Prosty komponent przyjmujący dane karty kredytowej.
+Powstawał wieczorami i w pośpiechu, więc ma jeszcze pewne braki.
+
+W szczególności przed komercyjnym użyciem należałoby:
+- dodać logotypy mniej popularnych operatorów kart,
+- zweryfikować działanie komponentu w innych przeglądarkach niż Chrome,
+- uzupełnić testy jednostkowe,
+- zastanowić się czy nie warto lekko zoptymalizować pod kątem częstych re-renderów,
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
