@@ -6,6 +6,7 @@ Powstawał wieczorami i w pośpiechu, więc ma jeszcze pewne braki.
 W szczególności przed komercyjnym użyciem należałoby:
 - dodać logotypy mniej popularnych operatorów kart,
 - zweryfikować działanie komponentu w innych przeglądarkach niż Chrome,
+- zapewnić dokładniejszą i ładniejszą walidację formularza,
 - uzupełnić testy jednostkowe,
 - zastanowić się czy nie warto lekko zoptymalizować pod kątem częstych re-renderów,
 

@@ -36,6 +36,7 @@ const CardInput = (): JSX.Element => {
     const [cardNumber, setCardNumber] = useState('');
     const [cardLogo, setCardLogo] = useState(cardLogos.placeholder);
     const [expiry, setExpiry] = useState('');
+    const [cardValid, setCardValid] = useState(true);
     const [expiryValid, setExpiryValid] = useState(true);
     const [cvc, setCvc] = useState('');
     const expiryRef = useRef<HTMLInputElement>(null);
@@ -56,6 +57,10 @@ const CardInput = (): JSX.Element => {
 
         Payment.formatCardNumber(element);
         setCardNumber(newValue);
+
+        if (newValue.length >= 19) {
+            setCardValid(isValid);
+        }
 
         if (isValid) {
             expiryRef.current?.focus();
@@ -95,6 +100,7 @@ const CardInput = (): JSX.Element => {
             onChange={onCardNumberChange}
             value={cardNumber}
             placeholder="Card number"
+            isError={!cardValid}
         />
         <Input
             type="text"
